@@ -1,0 +1,101 @@
+input,
+textarea {
+    appearance: none;
+    background-color: var(--input-base);
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    padding: 1rem;
+    font: var(--text-md);
+    color: var(--input-placeholder);
+    cursor: pointer;
+}
+
+input, textarea {
+    height: 48px;
+
+    &:invalid {
+        border: 1px solid var(--danger);
+    }
+
+    &[required] + .error {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+        margin-top: 0.25rem;
+        font: var(--text-xs);
+        color: var(--danger);
+    }
+
+    &:not(:focus):valid + .error {
+        display: none;
+    }
+}
+
+textarea {
+    height: 136px;
+}
+
+::-webkit-input-placeholder {
+    font: var(--text-md);
+    color: var(--input-placeholder);
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font: var(--text-md);
+    color: var(--input-placeholder);
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font: var(--text-md);
+    color: var(--input-placeholder);
+}
+
+:-ms-input-placeholder {
+    font: var(--text-md);
+    color: var(--input-placeholder);
+}
+
+input:focus,
+textarea:focus,
+input[type="datetime-local"]:focus-within {
+    outline: 1px solid var(--brand-light);
+    outline-offset: 0.1px;
+}
+
+input[type="datetime-local"] {
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        cursor: pointer;
+    }
+    text-transform: uppercase;
+}
+
+input[type="radio"]:checked + .button-toggle {
+    background-color: var(--input-stroke);
+    color: var(--text-heading);
+    & svg path {
+        fill: var(--brand-light);
+    }
+}
+
+.tipo-evento input[type="radio"],
+.color-options input[type="radio"],
+.theme-options input[type="radio"],
+.switch input {
+    display: none;
+}
+
+input[type="radio"]:checked + .color-circle {
+    outline: 0.125rem solid var(--brand-light);
+}
+
+.theme-options input[type="radio"]:checked + label {
+    outline: 0.125rem solid var(--brand-light);
+}
+
+.switch {
+    cursor: pointer;
+}

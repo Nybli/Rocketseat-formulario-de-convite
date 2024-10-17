@@ -1,0 +1,60 @@
+#page {
+    display: grid;
+    grid-template-columns: 32.25% 67.75%;
+    gap: 1.25rem;
+    max-width: 77.5rem;
+    /* height: 100vh; */
+    margin: 1.25rem;
+    margin-inline: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+aside {
+    height: 45.5rem;
+    background-image: url(/assets/images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 12px;
+
+    & .aside-container {
+        padding: 2rem;
+        display: grid;
+        gap: 1rem;
+    }
+
+    & .logo {
+        width: 45.85px;
+        height: 48px;
+    }
+
+    & h1 {
+        font: var(--logo);
+        color: var(--pink);
+        margin-bottom: 0.25rem;
+    }
+
+    & p {
+        font: 300 1rem var(--font-body);
+        color: var(--text-heading); /* 16px */
+    }
+}
+
+main {
+    background-color: var(--shape-body);
+    overflow: auto;
+    border-radius: inherit;
+    padding-inline: 8.125rem;
+    height: 45.5rem;
+
+    & .main-container {
+        max-width: 35rem;
+        padding-block: 5rem;
+    }
+
+    & h2 {
+        font: var(--heading-md);
+        color: var(--text-heading);
+    }
+}
