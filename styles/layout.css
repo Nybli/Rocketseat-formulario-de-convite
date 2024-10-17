@@ -3,7 +3,6 @@
     grid-template-columns: 32.25% 67.75%;
     gap: 1.25rem;
     max-width: 77.5rem;
-    /* height: 100vh; */
     margin: 1.25rem;
     margin-inline: auto;
     border-radius: 12px;
@@ -12,7 +11,7 @@
 
 aside {
     height: 45.5rem;
-    background-image: url(/assets/images/Background.png);
+    background-image: url(assets/images/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -37,7 +36,7 @@ aside {
 
     & p {
         font: 300 1rem var(--font-body);
-        color: var(--text-heading); /* 16px */
+        color: var(--text-heading);
     }
 }
 
