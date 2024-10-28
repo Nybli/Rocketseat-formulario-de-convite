@@ -3,20 +3,18 @@
     grid-template-columns: 32.25% 67.75%;
     gap: 1.25rem;
     max-width: 77.5rem;
-    margin: 1.25rem;
+    margin-block: 1.25rem;
     margin-inline: auto;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     overflow: hidden;
 }
 
 aside {
-    height: 45.5rem;
     background-image: url(../assets/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 12px;
-
+    border-radius: 0.75rem;
     & .aside-container {
         padding: 2rem;
         display: grid;
@@ -24,8 +22,7 @@ aside {
     }
 
     & .logo {
-        width: 45.85px;
-        height: 48px;
+        height: 3rem;
     }
 
     & h1 {
@@ -45,7 +42,7 @@ main {
     overflow: auto;
     border-radius: inherit;
     padding-inline: 8.125rem;
-    height: 45.5rem;
+    height: 95vh;
 
     & .main-container {
         max-width: 35rem;
